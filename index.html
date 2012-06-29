@@ -31,12 +31,13 @@
         var test = new preloadThis(
             {
                 load: [
-                    "file.jpg",
-                    "images/file2.jpg"
+                    "images/image1.jpeg",
+                    "images/image2.jpg"
                 ],
+                onInint: function() { alert('Let`s start'); },
                 callback: [
-                    function() {console.log('Файл file.jpg загружен');},
-                    function() {console.log('Файл file2.jpg загружен');}
+                    function() {console.log('Файл image1.jpeg загружен');},
+                    function() {console.log('Файл image2.jpg загружен');}
                 ],
                 complete: function() {
                     alert('Yuhoooo! Все файлы загружены');
