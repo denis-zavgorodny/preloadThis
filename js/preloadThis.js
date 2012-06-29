@@ -38,7 +38,7 @@ var preloadThis = function(options) {
     };
     var options = extend({
         load: [],
-        onInint: function() {
+        onInit: function() {
             alert('Let`s go');
         },
         callback: {},
@@ -54,7 +54,7 @@ var preloadThis = function(options) {
 
 
     var innerCounter = 0;
-    options.onInint();
+    options.onInit();
     for (var item in options.load) {
         getURL(options.load[item], options.callback[item]);
     }
