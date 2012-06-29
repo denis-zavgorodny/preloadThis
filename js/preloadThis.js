@@ -54,22 +54,6 @@ var preloadThis = function(options) {
     for (var item in options.load) {
         getURL(options.load[item], options.callback[item]);
     }
-};
-    
-var test = new preloadThis(
-    {
-        load: [
-            "preloader5.swf",
-            "images/img1.jpg"
-        ],
-        callback: [
-            function() {console.log('11111');},
-            function() {console.log('22222');}
-        ],
-        complete: function() {
-            alert('Yuhoooo!');
-        }
-        
-    }
-);
+}; 
+
  
