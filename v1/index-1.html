@@ -1,0 +1,129 @@
+<!--
+        index.html
+        
+        Copyright 2012 denis <denis@denis>
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Preload This</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 0.19.1" />
+    
+    <script type="text/javascript" src="js/preloadThis.js"></script>
+
+
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+    <link href="hight/main.css" rel="stylesheet" type="text/css" />
+    <link href="jCleverTemplate/default/css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+    <link href="jCleverTemplate/default/css/jClever.css" rel="stylesheet" type="text/css" />
+
+    <script src="hight/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="hight/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="hight/jquery.jscrollpane.min.js" type="text/javascript"></script>
+    <script src="hight/jClever.js" type="text/javascript"></script>
+    <script src="hight/main.js" type="text/javascript"></script>
+  
+</head>
+<body>
+    <h1 id="show">jClever Forms example</h1>
+    <form action="#" method="get" class="jClever">
+        <div class="row">
+            <label for="select1">Label 1</label>
+            <select name="select1" class="test" id="select1">
+                <option value="1">Text one</option>
+                <option value="2">Text two</option>
+                <option value="3">Text three</option>
+                <option value="4">Text four</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="select2">Label 2</label>
+            <select name="select2" class="test" id="select2">
+                <option value="1">A Text one</option>
+                <option value="2">B Text two</option>
+                <option value="3">c Text three</option>
+                <option selected="selected" value="4">Text four</option>
+                <option value="5">D Text very very long long text text Text very very long long text text Text very very long long text text</option>
+                <option value="6">1 Text two</option>
+                <option value="7">2 Text three</option>
+                <option value="8">3Text four</option>
+                <option value="9">4Text one</option>
+                <option value="10">Б Text two</option>
+                <option value="11">Text three</option>
+                <option value="12">Text four</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="checkbox1" value="1" id="checkbox1" checked="checked" />
+            <label for="checkbox1">Label 3</label>
+        </div>
+        <div class="row">        
+            <input type="checkbox" name="checkbox2" value="1" id="checkbox2" />
+            <label for="checkbox2">Label 3.1</label>            
+        </div>
+        <div class="row">        
+            <input type="checkbox" name="checkbox3" value="1" id="checkbox3" />
+            <label for="checkbox3">Label 3.2</label>            
+        </div>
+        <div class="row">        
+            <input type="radio" name="radio1" value="1" id="radio1" />
+            <label for="radio1">Label 4</label>            
+        </div>
+        <div class="row">        
+            <input type="radio" name="radio1" value="2" id="radio2" />
+            <label for="radio2">Label 4.1</label>            
+        </div>
+        <div class="row">        
+            <input type="radio" name="radio1" value="3" id="radio3"  checked="checked" />
+            <label for="radio3">Label 4.2</label>            
+        </div>
+        <div class="row">        
+            <input type="radio" name="radio2" value="3" id="radio4" />
+            <label for="radio4">Label 4.2-1</label>            
+        </div>
+        <div class="row">                
+            <input type="radio" name="radio2" value="3" id="radio5" />
+            <label for="radio5">Label 4.2-2</label>            
+        </div>
+        <div class="row">
+            <label for="file">File Input</label><br />
+            <input type="file" name="file" class="input-type-text" value="" id="file" />
+        </div>
+        <div class="row">
+            <label for="file2">File Input2</label><br />
+            <input type="file" name="file2" class="input-type-text" value="" id="file2" />
+        </div>
+        <div class="row">
+            <label for="text">Input</label><br />
+            <input tabindex="13" data-placeholder="Введите текст" type="text" name="text" class="input-type-text" value="text" id="text" />
+        </div>
+        <div class="row">
+            <label for="textarea">textarea</label><br />
+            <textarea  data-placeholder="Введите в поле текст" tabindex="13" name="textarea" cols="50" rows="10" id="textarea" ></textarea>
+        </div>
+        
+        <input  tabindex="14" type="submit" value="Отправить" />
+        <input tabindex="15" type="reset" value="Сбросить" />
+    </form>
+    
+</body>
+</html>
