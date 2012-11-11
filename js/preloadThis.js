@@ -136,7 +136,8 @@ var preloadThis = function(options) {
                         tmp.setAttribute("href", css[i]);
                         document.getElementsByTagName("head")[0].appendChild(tmp);
                     }
-                    selfJSAdd(js,0);
+                    if (js.length)
+                        selfJSAdd(js,0);
                 }        
             }
         };
