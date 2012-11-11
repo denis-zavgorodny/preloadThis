@@ -114,7 +114,8 @@ var preloadThis = function(options) {
         loadProcess.onreadystatechange = function() {
             if (loadProcess.readyState == 4) {
                 /*css execute*/
-                var file_type = url.slice(-3,url.length);
+                var clear_url = url.split('?');
+                var file_type = clear_url[0].slice(-3,url.length);
                 if (file_type == "css")
                     css[counter] = url;
                 /*js execute*/
@@ -138,7 +139,7 @@ var preloadThis = function(options) {
                     }
                     if (js.length)
                         selfJSAdd(js,0);
-                }        
+                }
             }
         };
         loadProcess.open('GET', options.load[item], true); 
