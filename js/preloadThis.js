@@ -124,6 +124,7 @@ var preloadThis = function(options) {
                     js[counter] = url;
                 if (typeof callback === 'function')
                     callback();
+                options.stepReady(counter, url);
                 innerCounter++;
                 if (innerCounter == options.load.length) {
                     if (typeof options.complete === 'function') {
@@ -153,6 +154,9 @@ var preloadThis = function(options) {
         callback: {},
         complete: function(e) {
             
+        },
+        stepReady: function(step, url) {
+
         },
         holdOnReady: true
     }, options);

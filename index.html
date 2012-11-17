@@ -43,7 +43,10 @@
                 "hight/main.js"
                
             ],
-            holdOnReady: true
+            holdOnReady: true,
+            stepReady: function(step, url){
+                console.log(step, url);
+            }
         });
         $(document).ready(function(){console.log('ok');});
     </script>
