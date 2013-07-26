@@ -115,13 +115,15 @@ var preloadThis = function(options) {
             if (loadProcess.readyState == 4) {
                 /*css execute*/
                 var clear_url = url.split('?');
-                var file_type = clear_url[0].slice(-3,url.length);
+                
+                var file_type = clear_url[0].slice(-3,clear_url[0].length);
                 if (file_type == "css")
                     css[counter] = url;
                 /*js execute*/
-                var file_type = url.slice(-2,url.length);
-                if (file_type == "js")
+                var file_type = clear_url[0].slice(-2,clear_url[0].length);
+                if (file_type == "js") {
                     js[counter] = url;
+                }    
                 if (typeof callback === 'function')
                     callback();
                 options.stepReady(counter, url);
@@ -174,6 +176,4 @@ var preloadThis = function(options) {
         if (typeof item == "string") 
             getURL(options.load[item], options.callback[item],sortOrder++);
     }
-}; 
-
- 
+};
